@@ -8,6 +8,9 @@ import '@fontsource/plus-jakarta-sans/800.css'
 import 'leaflet/dist/leaflet.css'
 import './index.css'
 import App from './App.tsx'
+import { initSync } from './store/sync'
+
+initSync()
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>

@@ -20,6 +20,9 @@
   --color-gris-bord: #e2e5f0;
   --color-rouge-sos: #c62828;
   --color-rouge-pale: #fde2e2;
+  /* Surfaces (redéfinies par le mode nuit) */
+  --color-surface: #ffffff;
+  --color-surface-haut: #f9faff;
 
   --radius-carte: 18px;
   --radius-bouton: 14px;
@@ -41,4 +44,61 @@ body {
   color: var(--color-encre);
   -webkit-font-smoothing: antialiased;
   -webkit-tap-highlight-color: transparent;
+}
+
+/* Animations légères (pensées pour un Android moyen : transform/opacity uniquement) */
+@keyframes toast-in {
+  from { opacity: 0; transform: translateY(-8px); }
+  to { opacity: 1; transform: none; }
+}
+@keyframes pop-in {
+  from { opacity: 0; transform: scale(0.96); }
+  to { opacity: 1; transform: none; }
+}
+@keyframes sheet-in {
+  from { transform: translateY(100%); }
+  to { transform: none; }
+}
+.anim-toast { animation: toast-in 180ms ease-out; }
+.anim-pop { animation: pop-in 160ms ease-out; }
+.anim-sheet { animation: sheet-in 220ms ease-out; }
+
+@media (prefers-reduced-motion: reduce) {
+  .anim-toast, .anim-pop, .anim-sheet { animation: none; }
+}
+
+/* Leaflet : marqueurs HTML personnalisés sans fond par défaut */
+.leaflet-div-icon.at-marker { background: transparent; border: 0; }
+.leaflet-container { font-family: var(--font-sans); background: #eef0f4; }
+
+/* Étiquettes de carte (pastilles des maquettes C7, C13, D7) */
+.leaflet-tooltip.at-label {
+  border: 0;
+  border-radius: 9999px;
+  padding: 4px 12px;
+  font-weight: 700;
+  font-size: 13px;
+  box-shadow: 0 4px 12px -4px rgb(20 27 43 / 0.35);
+}
+.leaflet-tooltip.at-label::before { display: none; }
+.leaflet-tooltip.at-label-vert { background: #005f3f; color: #fff; }
+.leaflet-tooltip.at-label-sombre { background: #141b2b; color: #fff; }
+.leaflet-tooltip.at-label-jaune { background: #feb726; color: #141b2b; }
+.leaflet-tooltip.at-label-blanc { background: #fff; color: #141b2b; }
+
+/* Mode nuit chauffeur (D9) : redéfinition des tokens → tout le thème bascule */
+.theme-nuit {
+  --color-fond-clair: #0d1220;
+  --color-fond-carte: #222a3d;
+  --color-surface: #182033;
+  --color-surface-haut: #111827;
+  --color-encre: #eef1f8;
+  --color-encre-douce: #c5cbd8;
+  --color-gris-texte: #9aa3b5;
+  --color-gris-bord: #2c3448;
+  --color-vert-clair: #12382b;
+  --color-jaune-pale: #3d3014;
+  --color-rouge-pale: #3f1c1f;
+  color: var(--color-encre);
+  background: var(--color-fond-clair);
 }
