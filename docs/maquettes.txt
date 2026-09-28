@@ -1,0 +1,1925 @@
+P R É S E N TAT I O N D E S M AQ U E T T E S
+
+
+
+
+Allo Tukki
+Le transport interrégional,
+enfin digitalisé.
+
+
+17      écrans
+        Client      14       écrans
+                             Chauffeur         5   modules
+                                                   Centrale web
+
+
+
+
+Septembre 2026 · Version 1.0 · Document confidentiel
+      Allo Tukki     Le projet
+
+
+LE PROJET
+
+
+Le transport interrégional,
+digitalisé de bout en bout.
+Allo Tukki permet aux chauffeurs qui assurent le transport entre les régions de digitaliser leur
+activité. Les voyageurs réservent leur place en quelques secondes, sans passer par la gare
+routière, paient en espèces à un tarif encadré et voyagent en sécurité d'une ville à l'autre,
+sous la supervision de la Fondation.
+
+
+     01                                                   02                                                        03
+     Application Client                                   Application                                               Centrale de
+                                                          Chauffeur                                                 régulation
+                                               9:41                                                9:41
+
+
+
+
+     Réserver sa place, suivre sa
+     voiture, payer en espèces,                           Obtenir son agrément, remplir                             Superviser les départs,
+     évaluer. Même sans internet.                         sa voiture, encaisser et suivre                           dispatcher les SMS, gérer
+                                                          ses gains.                                                sécurité, agréments et caisse.
+
+
+
+
+          Simplicité                                           Espèces d'abord                                            Réseau faible
+          Connexion par numéro, gros boutons, parcours         Prix fixe par place, paiement au chauffeur, Wave /         Mode bas débit et commande par SMS sans
+          courts.                                              Orange Money en option.                                    internet.
+
+          Langue locale                                        Sécurité                                                   Conçu pour la route
+          Français et wolof, avec explications audio.          SOS, partage de position, alerte silencieuse,              Lisible en plein soleil, mode nuit pour les voyages
+                                                               médiation.                                                 tardifs.
+
+
+
+
+02        Présentation des maquettes · Septembre 2026
+     Allo Tukki      Sommaire
+
+
+SOMMAIRE                                              01   Application Client             04     02   Application Chauffeur 23           03    Centrale de régulation 39
+
+36 écrans,                                           C1    Écran de lancement             06    D1    Devenir chauffeur            25   W1     Vue d'ensemble                40
+
+3 expériences.                                       C2
+                                                     C3
+                                                           Découverte en 3 étapes
+                                                           Numéro de téléphone
+                                                                                          07
+                                                                                          08
+                                                                                                D2
+                                                                                                D3
+                                                                                                      Identité & gare de départ    26
+                                                                                                      Enregistrement de la voiture 27
+                                                                                                                                        W2 Dispatch & réservations SMS / 44
+                                                                                                                                              vocales
+
+Chaque écran porte un code : C pour le Client, D                                                                                        W3    Sécurité, alertes SOS &        48
+                                                     C4    Code de vérification           09    D4    Pièces justificatives        28         médiation
+pour le Chauffeur (Driver), W pour la Centrale
+                                                     C5    Consentement & données         10    D5    Suivi du dossier d'agrément 29    W4     Agréments chauffeurs          52
+web. Il suffit de le citer pour un retour précis.
+                                                     C6    Prénom du voyageur              11   D7    Accueil chauffeur en ligne   30   W5     Finances & caisse solidaire   55
+                                                     C7    Accueil voyageur                12   D8    Nouvelle réservation         31
+
+IDENTITÉ VISUELLE                                    C8    Recherche du point de départ 13      D9    Mode nuit & économie         32
+                                                                                                      batterie
+      Vert Fondation                   Vert action   C10   Récapitulatif de la réservation 14
+      #005F3F                          #0D7A53                                                  D10   Prise en charge des          33
+                                                     C11   Recherche d'une place          15          voyageurs
+      Jaune soleil                     Fond clair
+      #FEB726                          #F1F3FF       C13   Prise en charge                 16   D11   Voyage en cours              34
+      Encre                                          C15   Arrivée & paiement en           17   D12   Encaissement en espèces      35
+      #141B2B                                              espèces
+                                                                                                D13   Évaluation du voyageur       36
+                                                           Évaluation & reçu
+Aa
+                                                     C16                                  18
+         Plus Jakarta Sans                                                                      D14   Gains & portefeuille         37
+         Une seule famille, du titre au texte        C17   Historique des voyages         19
+                                                                                                D15   Historique des voyages       38
+                                                     C18   Assistance SOS & sécurité      20
+
+                                                     C19   Profil & paramètres             21
+                                                     C20 Mode hors-ligne & réservation 22
+                                                           SMS
+
+
+
+
+03     Présentation des maquettes · Septembre 2026
+     Allo Tukki   01 · Application Client
+
+
+
+
+ 01
+ Application Client
+ L'application des voyageurs : de l'inscription par téléphone
+ à la réservation d'une place pour une autre région, avec un
+ mode SMS pour les zones sans internet.
+
+
+
+ 17                4                        FR · WO
+ écrans conçus     étapes de parcours       français et wolof
+
+
+
+
+04     Présentation des maquettes · Septembre 2026
+      Allo Tukki      01 · Application Client
+
+PA R C O U R S U T I L I S AT E U R
+
+Le parcours client en 4 étapes
+De la première ouverture de l'application jusqu'à l'arrivée dans une autre ville, chaque étape a été pensée pour être
+simple, rapide et rassurante.
+
+      01
+     Inscription
+     Créer son compte en moins d'une                                    ›                          ›                            ›                           ›                         ›
+     minute, avec son seul numéro de
+     téléphone.
+                                                C1 Écran de lanceme…        C2 Découverte en 3 …       C3 Numéro de télép…          C4 Code de vérificat…       C5 Consentement & …       C6 Prénom du voyag…
+
+
+
+
+      02
+     Réservation                                                        ›                          ›                            ›
+     Choisir sa ville de destination et
+     réserver sa place à prix fixe.
+                                                C7 Accueil voyageur         C8 Recherche du poi…       C10 Récapitulatif de …       C11 Recherche d'une…
+
+
+
+
+      03
+     Voyage & paiement                                                  ›                          ›
+     Être pris en charge, voyager, payer en
+     espèces, évaluer.
+                                                 C13 Prise en charge        C15 Arrivée & paiem…       C16 Évaluation & reçu
+
+
+
+
+      04
+     Services                                                           ›                          ›                            ›
+     Historique, sécurité, profil et mode
+     hors-ligne.
+                                                C17 Historique des v…       C18 Assistance SOS …       C19 Profil & paramèt…        C20 Mode hors-lign…
+
+
+
+05         Présentation des maquettes · Septembre 2026
+      Allo Tukki   01 · Application Client
+
+
+                                                                9:41
+
+
+
+
+ C1     ÉTAPE DU PARCOURS · INSCRIPTION
+
+
+Écran de lancement
+Premier contact avec la marque : le logo Allo Tukki
+et l'identité verte de la Fondation installent
+immédiatement la confiance pour voyager d'une
+région à l'autre.
+
+
+                                                                  1
+ 1     Signature de marque
+       Le « Allo Dakar » que tout le monde connaît, enfin
+       dans le téléphone.                                              2
+
+ 2     Accueil en wolof
+       Un mot de bienvenue dans la langue des
+       voyageurs.
+
+ 3     Pensé pour la route
+       Une application légère, fluide même sur les axes
+       mal couverts.
+
+
+
+                                                            3
+
+
+
+
+06      Présentation des maquettes · Septembre 2026
+      Allo Tukki    01 · Application Client
+
+
+                                                           9:41
+
+
+
+
+ C2     ÉTAPE DU PARCOURS · INSCRIPTION
+
+
+Découverte en 3
+étapes
+La promesse du service en trois messages
+simples : réserver sa place pour une autre ville
+                                                               1
+sans se déplacer à la gare routière.
+
+
+
+ 1     Une promesse claire
+       Réserver sa place en quelques secondes, depuis
+       chez soi.
+                                                           2
+ 2     Trois piliers
+       Rapide, fiable, espèces : l'essentiel à retenir.
+
+ 3     Accès direct
+       Les voyageurs réguliers passent l'introduction en
+       un geste.
+
+                                                                   3
+
+
+
+
+07      Présentation des maquettes · Septembre 2026
+      Allo Tukki   01 · Application Client
+
+
+
+
+                                                           9:41                               9:41
+
+
+
+
+                                                           1
+ C3     ÉTAPE DU PARCOURS · INSCRIPTION
+
+
+Numéro de téléphone
+Connexion par simple numéro de téléphone, avec
+un pavé numérique large et lisible. Aucun mot de
+passe à retenir.
+                                                       2
+                                                                                          →
+
+
+ 1     Sans mot de passe
+       Un numéro suffit pour créer son compte.
+
+ 2     Tous les opérateurs
+       Orange, Free, Expresso et Wave sont reconnus.
+
+ 3     Validation par SMS
+       Un bouton large, impossible à manquer.
+                                                                                                     3
+
+
+
+
+                                                                  À L' O U V E RT U R E              E N FA I S A N T D É F I L E R
+
+
+
+08      Présentation des maquettes · Septembre 2026
+      Allo Tukki   01 · Application Client
+
+
+                                                             9:41
+
+
+
+
+ C4      ÉTAPE DU PARCOURS · INSCRIPTION                            1
+
+
+Code de vérification
+Saisie du code reçu par SMS, pensée pour les
+zones où le réseau est capricieux.
+                                                                2
+
+
+ 1     Code à 6 chiffres                                                3
+       De grandes cases pour une saisie rapide et sans
+       erreur.
+
+ 2     Détection automatique
+       Le code se remplit tout seul à la réception du SMS.
+
+ 3     Plan B vocal
+       Pas de SMS ? Le code peut être dicté par appel.
+
+
+
+
+09      Présentation des maquettes · Septembre 2026
+      Allo Tukki   01 · Application Client
+
+
+
+
+                                                             9:41                                   9:41
+
+
+
+
+ C5     ÉTAPE DU PARCOURS · INSCRIPTION
+
+
+Consentement &
+données                                                  1
+
+Ce qui est collecté, ce qui ne l'est jamais : tout est
+expliqué simplement, sans jargon juridique.
+                                                                                                →
+                                                                    2
+ 1     La confiance d'abord
+       Un message rassurant et compréhensible par
+       tous.
+
+ 2     Transparence totale
+       Chaque donnée collectée est justifiée en une
+       phrase.
+
+ 3     Consentement clair
+       Une seule action pour accepter et poursuivre.                                                       3
+
+
+
+
+                                                                        À L' O U V E RT U R E                  E N FA I S A N T D É F I L E R
+
+
+
+10     Présentation des maquettes · Septembre 2026
+          Allo Tukki   01 · Application Client
+
+
+
+
+                                                                      9:41                                   9:41
+
+
+
+
+                                                                  1
+     C6     ÉTAPE DU PARCOURS · INSCRIPTION
+
+
+Prénom du voyageur
+Dernière étape de l'inscription : le prénom, qui
+apparaîtra sur la liste des passagers du chauffeur.
+
+                                                                                                     →   2
+
+     1     Un ton chaleureux
+           Une question simple et conviviale.
+
+ 2         Suggestions
+                                                                                                                3
+           Les prénoms courants en un tap, sans clavier.
+
+ 3         Aperçu côté chauffeur
+           Le voyageur voit comment il figurera sur la liste du
+           chauffeur.
+
+
+
+
+                                                                             À L' O U V E RT U R E                  E N FA I S A N T D É F I L E R
+
+
+
+11         Présentation des maquettes · Septembre 2026
+      Allo Tukki    01 · Application Client
+
+
+
+
+                                                            9:41                                   9:41
+
+
+
+
+ C7     ÉTAPE DU PARCOURS · RÉSERVATION
+
+
+Accueil voyageur                                                    1
+Le cœur de l'application : les voitures
+interrégionales en partance autour de soi, et la
+ville de destination à portée de pouce.
+
+                                                                                           →          2
+
+ 1     Départs en direct                                                                       3
+       Les voitures en attente de passagers et leur point
+       de départ.
+
+ 2     Recherche immédiate
+       La ville de destination se saisit dès l'ouverture.
+
+ 3     Points de départ
+       Gare routière, marché, mosquée : les lieux de
+       rendez-vous habituels.
+
+
+
+
+                                                                   À L' O U V E RT U R E                  E N FA I S A N T D É F I L E R
+
+
+
+12     Présentation des maquettes · Septembre 2026
+      Allo Tukki   01 · Application Client
+
+
+
+
+                                                             9:41                               9:41
+
+
+
+
+ C8      ÉTAPE DU PARCOURS · RÉSERVATION
+                                                                2
+
+Recherche du point
+de départ
+                                                         1
+
+
+
+On choisit où le chauffeur viendra prendre le
+voyageur, comme on se repère vraiment : par lieux
+connus, par quartier ou sur la carte.                                                       →   3
+
+
+
+
+ 1     Repères locaux
+       Lieux de culte, marchés, santé, écoles.
+
+ 2     Pointage sur la carte
+       Idéal pour une prise en charge devant chez soi.
+
+ 3     Durée et prix affichés
+       Chaque point indique le délai et le tarif.
+
+
+
+
+                                                                    À L' O U V E RT U R E              E N FA I S A N T D É F I L E R
+
+
+
+13     Présentation des maquettes · Septembre 2026
+     Allo Tukki    01 · Application Client
+
+
+
+
+                                                            9:41                                 9:41
+
+
+
+
+ C10     ÉTAPE DU PARCOURS · RÉSERVATION
+
+
+Récapitulatif de la
+réservation
+Tout est clair avant de réserver sa place : le trajet,
+le prix fixe par place, et des repères pour que le
+                                                             1
+chauffeur retrouve son passager.
+                                                                                             →
+
+
+
+ 1     Trajet précis
+       Point de départ et destination avec leurs repères.
+                                                                 2
+ 2     Repères de rencontre
+       « Foulard jaune », « devant la boutique »… on vous
+       trouve.
+
+ 3     Prix garanti
+       Le prix de la place est connu avant de réserver.                                          3
+
+
+
+
+                                                                     À L' O U V E RT U R E              E N FA I S A N T D É F I L E R
+
+
+
+14     Présentation des maquettes · Septembre 2026
+       Allo Tukki   01 · Application Client
+
+
+
+
+                                                       9:41                                 9:41
+
+
+
+
+ C11      ÉTAPE DU PARCOURS · RÉSERVATION
+                                                        1
+
+Recherche d'une
+place
+L'application cherche une voiture avec des places
+libres sur la ligne. Et si le réseau faiblit, la
+réservation bascule par SMS.                                                            →
+
+
+
+ 1      Recherche en direct
+        Minuteur et voitures interrogées visibles.
+                                                            2
+ 2      Accompagnement vocal
+        Un message audio en wolof pendant l'attente.
+
+ 3      Secours SMS
+        Réseau lent ? La réservation passe par SMS.                                          3
+
+
+
+
+                                                                À L' O U V E RT U R E              E N FA I S A N T D É F I L E R
+
+
+
+15      Présentation des maquettes · Septembre 2026
+     Allo Tukki    01 · Application Client
+
+
+
+
+                                                          9:41                                   9:41
+
+
+
+
+ C13     ÉTAPE DU PARCOURS · VOYAGE & PAIEMENT                   1
+
+
+
+Prise en charge
+Le voyageur suit l'arrivée de sa voiture en direct et
+sait exactement qui vient le chercher avant le
+départ.
+                                                                                                        2
+                                                                                             →
+
+
+ 1     Arrivée en temps réel
+       Temps et distance restants mis à jour en direct.
+
+ 2     Chauffeur certifié
+       Photo, badge, voiture et plaque pour le
+       reconnaître.
+
+ 3     Messages rapides                                                                          3
+       Prévenir le chauffeur sans taper un mot.
+
+
+
+
+                                                                     À L' O U V E RT U R E              E N FA I S A N T D É F I L E R
+
+
+
+16     Présentation des maquettes · Septembre 2026
+     Allo Tukki    01 · Application Client
+
+
+
+
+                                                        9:41                                   9:41
+
+
+
+
+ C15     ÉTAPE DU PARCOURS · VOYAGE & PAIEMENT
+                                                           1
+
+
+Arrivée & paiement
+en espèces
+À l'arrivée dans la ville de destination, le paiement
+en espèces se fait sans stress : montant exact,                                            2
+aide à la monnaie, confirmation en un geste.                                           →
+
+
+
+ 1     Arrivée confirmée
+       Le récapitulatif du trajet effectué.
+
+ 2     Aide à la monnaie
+       L'application calcule la monnaie à rendre.
+
+ 3     Paiement confirmé
+       Le voyageur valide en un geste.
+                                                                                                      3
+
+
+
+
+                                                               À L' O U V E RT U R E                  E N FA I S A N T D É F I L E R
+
+
+
+17     Présentation des maquettes · Septembre 2026
+     Allo Tukki   01 · Application Client
+
+ C16     ÉTAPE DU PARCOURS · VOYAGE & PAIEMENT
+                                                                 1                                            2                                         3
+
+Évaluation & reçu                                               Note en étoiles
+                                                                Évaluer son chauffeur en une
+                                                                                                             Pourboire Teranga
+                                                                                                             Un geste solidaire, toujours
+                                                                                                                                                      Reçu détaillé
+                                                                                                                                                      Téléchargeable en PDF ou envoyé
+Un moment positif pour conclure le voyage : noter, remercier,   seconde.                                     facultatif.                              par SMS.
+et garder une trace.
+
+
+                      9:41                                           9:41                                                      9:41
+
+
+
+
+                                                                                                                                3
+
+
+
+
+                                                            →                                                     →
+
+
+                              1
+
+                                                                       2
+
+
+
+
+                             À L' O U V E RT U R E                          E N FA I S A N T D É F I L E R                            F I N D E L' É C R A N
+
+18     Présentation des maquettes · Septembre 2026
+     Allo Tukki    01 · Application Client
+
+
+
+
+                                                           9:41                               9:41
+
+
+
+
+ C17     ÉTAPE DU PARCOURS · SERVICES
+
+
+Historique des
+voyages                                                1
+Tous les voyages passés, avec leurs reçus, et la
+possibilité de réserver à nouveau un trajet habituel
+en un geste.
+                                                                                          →
+
+
+
+ 1     Filtres rapides
+       Tous les voyages, ce mois, pèlerinages…
+
+ 2     Réserver à nouveau                              2
+       Refaire un trajet habituel en un geste.
+
+ 3     Objet oublié
+       Signaler un bagage ou un objet oublié dans la                                                                  3
+       voiture.
+
+
+
+
+                                                                  À L' O U V E RT U R E              E N FA I S A N T D É F I L E R
+
+
+
+19     Présentation des maquettes · Septembre 2026
+     Allo Tukki   01 · Application Client
+
+ C18     ÉTAPE DU PARCOURS · SERVICES
+                                                                     1                                            2                                        3
+
+Assistance SOS & sécurité                                           Secours immédiats
+                                                                    Pompiers, police et gendarmerie
+                                                                                                                 Partage de position
+                                                                                                                 Les proches suivent le voyage via
+                                                                                                                                                         Médiation
+                                                                                                                                                         Un médiateur joignable 24h/24 en
+La sécurité au centre, même loin de chez soi : secours,             à portée de doigt.                           WhatsApp ou SMS.                        cas de litige.
+partage de position, alerte discrète et médiation, réunis sur
+un seul écran.
+
+                      9:41                                               9:41                                                     9:41
+
+
+
+
+                       1
+
+
+
+                                                                          3
+
+
+
+
+                                                                →                                                     →
+
+
+
+                             2
+
+
+
+
+                                 À L' O U V E RT U R E                          E N FA I S A N T D É F I L E R                           F I N D E L' É C R A N
+
+20     Présentation des maquettes · Septembre 2026
+     Allo Tukki   01 · Application Client
+
+ C19     ÉTAPE DU PARCOURS · SERVICES
+                                                                 1                                             2                                        3
+
+Profil & paramètres                                             Français ou wolof
+                                                                Interface et assistance vocale
+                                                                                                              Mode bas débit
+                                                                                                              Carte allégée et reçus par SMS
+                                                                                                                                                      Adresses favorites
+                                                                                                                                                      Domicile, famille, lieu de prière
+Un profil qui s'adapte à chacun : langue, consommation de       dans la langue choisie.                       gratuits.                               enregistrés.
+données, adresses favorites et contact d'urgence.
+
+
+                      9:41                                           9:41                                                      9:41
+
+
+
+
+                                                                         2
+
+
+
+
+                       1
+                                                            →                                                      →
+                                                                     3
+
+
+
+
+                             À L' O U V E RT U R E                           E N FA I S A N T D É F I L E R                           F I N D E L' É C R A N
+
+21     Présentation des maquettes · Septembre 2026
+     Allo Tukki    01 · Application Client
+
+
+
+
+                                                          9:41                                   9:41
+
+
+
+
+ C20      ÉTAPE DU PARCOURS · SERVICES
+
+
+Mode hors-ligne &
+réservation SMS                                                  1
+
+Sans internet, le service continue : la réservation
+part par SMS, guidée par une explication vocale
+en wolof.                                                                                    →            3
+                                                      2
+
+
+ 1     Explication audio
+       Un guide vocal en wolof, pas à pas.
+
+ 2     Destinations en un tap
+       Les trajets principaux sont pré-codés.
+
+ 3     SMS gratuit
+       La réservation part par SMS, sans internet.
+
+
+
+
+                                                                     À L' O U V E RT U R E              E N FA I S A N T D É F I L E R
+
+
+
+22     Présentation des maquettes · Septembre 2026
+     Allo Tukki   02 · Application Chauffeur
+
+
+
+
+ 02
+ Application
+ Chauffeur
+ L'outil de travail des chauffeurs interrégionaux : agrément,
+ remplissage de la voiture place par place, encaissement et
+ suivi des gains.
+
+
+
+ 14
+ écrans conçus
+                   4
+                   étapes de parcours
+                                           ☀·☾
+                                           modes jour et nuit
+
+
+
+
+23     Présentation des maquettes · Septembre 2026
+      Allo Tukki      02 · Application Chauffeur
+
+PA R C O U R S U T I L I S AT E U R
+
+Le parcours chauffeur en 4 étapes
+De l'agrément à l'encaissement, l'application remplace le cahier et les rabatteurs : le chauffeur remplit sa voiture et suit
+ses voyages depuis son téléphone.
+
+
+      01
+     Inscription & agrément                                            ›                           ›                          ›                             ›
+     Rejoindre le réseau et obtenir
+     l'agrément de la Fondation.
+                                                D1 Devenir chauffeur       D2 Identité & gare d…       D3 Enregistrement d…       D4 Pièces justificativ…       D5 Suivi du dossier d…
+
+
+
+
+      02
+     En service                                                        ›                           ›
+     Recevoir les réservations de places, de
+     jour comme de nuit.
+                                               D7 Accueil chauffeur…       D8 Nouvelle réservat…       D9 Mode nuit & écon…
+
+
+
+
+      03
+     Voyage                                                            ›                           ›                          ›
+     Récupérer les passagers, relier les
+     villes, encaisser.
+                                               D10 Prise en charge …        D11 Voyage en cours        D12 Encaissement e…        D13 Évaluation du vo…
+
+
+
+
+      04
+     Gains                                                             ›
+     Suivre ses revenus et sa commission
+     solidaire.
+                                               D14 Gains & portefe…        D15 Historique des v…
+
+
+
+24         Présentation des maquettes · Septembre 2026
+      Allo Tukki   02 · Application Chauffeur
+
+ D1     ÉTAPE DU PARCOURS · INSCRIPTION & AGRÉMENT
+                                                                  1                                           2                         3                             4
+
+Devenir chauffeur                                                Un message fort
+                                                                 Un recrutement fondé
+                                                                                                         Version audio
+                                                                                                         Toute la présentation
+                                                                                                                                      Avantages concrets
+                                                                                                                                      Revenus, couverture
+                                                                                                                                                                     Inscription express
+                                                                                                                                                                     Trois minutes pour
+La porte d'entrée des chauffeurs qui relient les régions : un    sur la dignité et la                    écoutable en wolof.          santé, badge certifié.         démarrer.
+discours valorisant et des avantages concrets pour digitaliser   sécurité.
+leur activité.
+
+                        9:41                                          9:41                                                           9:41
+
+
+
+
+                    1                                                        3
+
+
+
+
+                                  2
+                                                            →                                                           →
+
+
+
+
+                                                                                                                                 4
+
+
+
+
+                               À L' O U V E RT U R E                         E N FA I S A N T D É F I L E R                                 F I N D E L' É C R A N
+
+25      Présentation des maquettes · Septembre 2026
+      Allo Tukki    02 · Application Chauffeur
+
+
+
+
+                                                                9:41                                   9:41
+
+
+
+
+                                                            1
+
+
+ D2     ÉTAPE DU PARCOURS · INSCRIPTION & AGRÉMENT
+
+
+Identité & gare de
+départ
+Les informations du chauffeur et sa gare routière
+de rattachement, d'où partent ses voyages.                                                         3
+                                                                                               →
+
+
+
+ 1     Progression visible
+       Le chauffeur sait toujours où il en est.
+                                                            2
+ 2     Gare de rattachement
+       Choix visuel de sa gare ou de son point de départ.
+
+ 3     Garant
+       Un référent appuie la candidature.
+
+
+
+
+                                                                       À L' O U V E RT U R E                  E N FA I S A N T D É F I L E R
+
+
+
+26      Présentation des maquettes · Septembre 2026
+      Allo Tukki    02 · Application Chauffeur
+
+
+
+
+                                                                  9:41                                   9:41
+
+
+
+
+ D3     ÉTAPE DU PARCOURS · INSCRIPTION & AGRÉMENT
+
+
+Enregistrement de la
+voiture                                                                                              3
+
+
+La voiture déclarée en quelques taps, avec son
+nombre de places et la vérification des
+équipements de sécurité.
+                                                                                                 →
+                                                              1
+
+ 1     Sélection rapide
+       Les modèles courants sur les routes proposés en
+       un tap.
+                                                              2
+ 2     Couleur de la voiture
+       Pour que les voyageurs la reconnaissent.
+
+ 3     Check-list sécurité
+       Kit de sécurité, rétroviseurs et éclairage vérifiés.
+
+
+
+
+                                                                         À L' O U V E RT U R E                  E N FA I S A N T D É F I L E R
+
+
+
+27      Présentation des maquettes · Septembre 2026
+      Allo Tukki   02 · Application Chauffeur
+
+
+
+
+                                                            9:41                                   9:41
+
+
+
+
+ D4     ÉTAPE DU PARCOURS · INSCRIPTION & AGRÉMENT
+
+
+Pièces justificatives
+Le dépôt des documents se fait directement avec
+l'appareil photo, avec des conseils pour réussir du
+premier coup.
+                                                                   1
+                                                                                               →
+
+
+ 1     Pièce d'identité
+       Recto et verso, statut d'envoi visible.
+                                                               2
+ 2     Photo guidée
+       Des conseils pour une photo nette de la voiture et
+       de sa plaque.
+
+ 3     Envoi du dossier
+       Transmission à la Fondation en un geste.
+
+
+                                                                                                   3
+
+
+
+
+                                                                       À L' O U V E RT U R E              E N FA I S A N T D É F I L E R
+
+
+
+28      Présentation des maquettes · Septembre 2026
+      Allo Tukki   02 · Application Chauffeur
+
+ D5     ÉTAPE DU PARCOURS · INSCRIPTION & AGRÉMENT
+                                                                      1                                            2                                        3
+
+Suivi du dossier d'agrément                                       Confirmation
+                                                                  Un message chaleureux à la
+                                                                                                                  Suivi étape par étape
+                                                                                                                  Dépôt, contrôle, remise de
+                                                                                                                                                          Mode formation
+                                                                                                                                                          S'entraîner avant ses premiers
+Le chauffeur suit la validation de son dossier étape par étape,   réception du dossier.                           l'équipement.                           voyages.
+et peut déjà s'entraîner.
+
+
+                         9:41                                             9:41                                                     9:41
+
+
+
+
+                     1
+
+
+
+
+                                                                  2
+                                                             →                                                         →
+
+
+
+
+                                                                                                                                    3
+
+
+
+
+                                À L' O U V E RT U R E                            E N FA I S A N T D É F I L E R                           F I N D E L' É C R A N
+
+29      Présentation des maquettes · Septembre 2026
+      Allo Tukki   02 · Application Chauffeur
+
+
+
+
+                                                             9:41                               9:41
+
+
+
+
+                                                             1
+ D7     ÉTAPE DU PARCOURS · EN SERVICE
+
+
+Accueil chauffeur en
+ligne
+Le tableau de bord du chauffeur en service : sa
+disponibilité, sa ligne et le bilan de sa journée.
+                                                                                            →
+
+
+
+ 1     Statut en ligne
+       Le chauffeur signale qu'il prend des passagers.
+
+ 2     Bilan du jour                                     2
+       Gains, voyages et commission en un coup d'œil.
+                                                                                                       3
+ 3     Pause en un geste
+       Se mettre hors ligne instantanément.
+
+
+
+
+                                                                    À L' O U V E RT U R E              E N FA I S A N T D É F I L E R
+
+
+
+30      Présentation des maquettes · Septembre 2026
+      Allo Tukki   02 · Application Chauffeur
+
+
+
+
+                                                              9:41                               9:41
+
+
+
+
+ D8     ÉTAPE DU PARCOURS · EN SERVICE                           1
+
+
+
+Nouvelle réservation                                      2
+
+Chaque place réservée arrive sur un écran à très
+fort contraste, lisible en plein soleil : la voiture se
+remplit sans passer par les rabatteurs.
+                                                                                             →
+
+
+ 1     Alerte prioritaire
+       Impossible à manquer, même en plein soleil.
+
+ 2     Compte à rebours
+       Quelques secondes pour accepter le passager.
+
+ 3     Un bouton géant
+       Accepter d'un seul geste, depuis le support du
+       tableau de bord.                                                                                 3
+
+
+
+
+                                                                     À L' O U V E RT U R E                  E N FA I S A N T D É F I L E R
+
+
+
+31     Présentation des maquettes · Septembre 2026
+      Allo Tukki    02 · Application Chauffeur
+
+
+
+
+                                                      9:41                                   9:41
+
+
+
+
+ D9     ÉTAPE DU PARCOURS · EN SERVICE
+
+
+Mode nuit &                                                                  1
+
+économie batterie                                                                        3
+
+Pour les voyages de nuit : un thème sombre qui        2
+préserve la batterie et renforce la sécurité sur la
+route.                                                                               →
+
+
+
+ 1     Thème nuit
+       Écran sombre : jusqu'à +40 % d'autonomie.
+
+ 2     Radar de nuit
+       Les zones où des voyageurs attendent.
+
+ 3     Contrôle sécurité
+       Phares, gilet et feux stop vérifiés.
+
+
+
+
+                                                             À L' O U V E RT U R E                  E N FA I S A N T D É F I L E R
+
+
+
+32      Présentation des maquettes · Septembre 2026
+     Allo Tukki    02 · Application Chauffeur
+
+
+
+
+                                                     9:41                                   9:41
+
+
+
+
+ D10     ÉTAPE DU PARCOURS · VOYAGE                         1
+
+
+
+Prise en charge des
+voyageurs
+Avant le départ, le chauffeur récupère ses
+passagers un par un avec tous les repères utiles,
+et signale tout imprévu en un geste.                                                    →
+
+
+                                                                                              2
+ 1     Navigation
+       Temps d'arrivée et distance en direct.
+
+ 2     Repère du voyageur
+       L'indication donnée par la passagère.
+                                                                                                   3
+ 3     Arrivée signalée
+       Le voyageur est prévenu instantanément.
+
+
+
+
+                                                                À L' O U V E RT U R E                  E N FA I S A N T D É F I L E R
+
+
+
+33     Présentation des maquettes · Septembre 2026
+       Allo Tukki   02 · Application Chauffeur
+
+
+
+
+                                                        9:41                                   9:41
+
+
+
+
+ D11      ÉTAPE DU PARCOURS · VOYAGE                       1
+
+
+
+Voyage en cours
+Pendant le trajet entre les deux villes, un guidage
+lisible au volant et les alertes des zones sensibles.
+                                                                                           →
+
+ 1      Passagers à bord
+        Identité et ceinture bouclée confirmées.               2
+
+
+ 2      Guidage clair
+        Grandes flèches et alertes de zone.
+
+ 3      Fin du voyage
+        Terminer le trajet et encaisser.
+                                                                                                      3
+
+
+
+
+                                                                   À L' O U V E RT U R E                  E N FA I S A N T D É F I L E R
+
+
+
+34       Présentation des maquettes · Septembre 2026
+     Allo Tukki    02 · Application Chauffeur
+
+
+
+
+                                                      9:41                                   9:41
+
+
+
+
+ D12     ÉTAPE DU PARCOURS · VOYAGE
+
+
+Encaissement en
+espèces
+Un encaissement transparent, place par place : le
+montant, la commission et le gain net, puis retour           1
+en ligne pour le voyage retour.
+                                                                                         →
+
+
+
+ 1     Montant à encaisser
+       Le prix est affiché en très grand.
+                                                      2
+ 2     Décompte transparent
+       Brut, commission de 10 % et gain net.
+
+ 3     Retour en ligne
+       Confirmer et reprendre des passagers pour le
+       retour.
+                                                                                             3
+
+
+
+
+                                                                 À L' O U V E RT U R E              E N FA I S A N T D É F I L E R
+
+
+
+35     Présentation des maquettes · Septembre 2026
+     Allo Tukki    02 · Application Chauffeur
+
+
+
+
+                                                        9:41                                   9:41
+
+
+
+
+ D13     ÉTAPE DU PARCOURS · VOYAGE
+
+
+Évaluation du                                           1
+
+voyageur                                                                                         2
+
+
+Le respect va dans les deux sens : le chauffeur
+évalue à son tour le voyageur.                                                             3
+                                                                                       →
+
+
+
+ 1     Encaissement validé
+       Le montant net conservé par le chauffeur.
+
+ 2     Note du voyageur
+       Le chauffeur évalue à son tour.
+
+ 3     Points forts
+       Ponctualité, monnaie prête, ceinture attachée…
+
+
+
+
+                                                               À L' O U V E RT U R E                  E N FA I S A N T D É F I L E R
+
+
+
+36     Présentation des maquettes · Septembre 2026
+     Allo Tukki   02 · Application Chauffeur
+
+ D14     ÉTAPE DU PARCOURS · GAINS
+                                                                      1                                            2                                        3
+
+Gains & portefeuille                                                 Gains du jour
+                                                                     Montant net, évolution et
+                                                                                                                  Commission solidaire
+                                                                                                                  Le montant à reverser, clairement
+                                                                                                                                                          Paiement mobile
+                                                                                                                                                          Régler via Wave ou Orange
+Le chauffeur pilote son activité : gains, commission solidaire       voyages réalisés.                            indiqué.                                Money.
+et paiements mobiles au même endroit, sans cahier ni
+intermédiaire.
+
+                      9:41                                                9:41                                                     9:41
+
+
+
+
+                       1
+                                                                            3
+
+
+                                                                 →                                                     →
+
+
+
+
+                             2
+
+
+
+
+                                 À L' O U V E RT U R E                           E N FA I S A N T D É F I L E R                           F I N D E L' É C R A N
+
+37     Présentation des maquettes · Septembre 2026
+     Allo Tukki   02 · Application Chauffeur
+
+ D15    ÉTAPE DU PARCOURS · GAINS
+                                                                  1                                            2                                     3
+
+Historique des voyages                                           Synthèse du jour
+                                                                 Recette brute, voyages et net
+                                                                                                              Filtres
+                                                                                                              Espèces, Wave, litiges…
+                                                                                                                                                  Contestation
+                                                                                                                                                  Signaler une erreur sur un
+Chaque voyage détaillé, pour une transparence totale entre       estimé.                                                                          voyage.
+le chauffeur et la Fondation.
+
+
+                       9:41                                           9:41                                                       9:41
+
+
+
+
+                       1
+
+
+
+
+                                                             →                                                          →
+                   2
+
+                                                                                                                                    3
+
+
+
+
+                              À L' O U V E RT U R E                          E N FA I S A N T D É F I L E R                             F I N D E L' É C R A N
+
+38     Présentation des maquettes · Septembre 2026
+     Allo Tukki   03 · Centrale de régulation
+
+
+
+
+ 03
+ Centrale de
+ régulation
+ L'interface web de la Fondation : supervision des voitures
+ interrégionales, dispatch des réservations SMS et vocales,
+ sécurité, agréments et caisse solidaire.
+
+
+
+ 5                24/7                 SMS
+ modules web      suivi des départs    réservations sans internet
+
+
+
+
+39     Présentation des maquettes · Septembre 2026
+      Allo Tukki   03 · Centrale de régulation
+
+
+
+
+ W1      INTERFACE WEB · CENTRALE
+
+
+Vue d'ensemble
+Le poste de pilotage de la Fondation : toutes les
+voitures interrégionales et leurs départs en temps
+réel, sur un seul écran.
+
+
+
+ 1     Indicateurs clés
+       Voitures, voyages, SMS, caisse et sécurité en
+       direct.
+
+ 2     Répartition de la flotte
+       Voitures par gare de départ et respect des zones
+       30 km/h.
+
+ 3     Flux en direct
+       Réservations, SMS et affectations au fil de l'eau.
+
+ 4     Médiation
+       Suivi des incidents et des délégués de terrain.
+
+
+
+
+40      Présentation des maquettes · Septembre 2026
+      Allo Tukki      03 · Centrale de régulation
+
+ W1      VUE DÉTAILLÉE · PARTIE 1 SUR 3        Vue d'ensemble
+ 1   Indicateurs clés      2 Répartition de la flotte   3 Flux en direct   4 Médiation
+
+
+
+
+                   centrale.allotukki.sn
+
+
+
+
+                                                    1
+
+
+
+
+41      Présentation des maquettes · Septembre 2026
+      Allo Tukki    03 · Centrale de régulation
+
+ W1      VUE DÉTAILLÉE · PARTIE 2 SUR 3           Vue d'ensemble
+ 1   Indicateurs clés   2 Répartition de la flotte     3 Flux en direct   4 Médiation
+
+
+
+                               centrale.allotukki.sn
+                                                              2                         3
+
+
+
+
+42      Présentation des maquettes · Septembre 2026
+      Allo Tukki    03 · Centrale de régulation
+
+ W1      VUE DÉTAILLÉE · PARTIE 3 SUR 3             Vue d'ensemble
+ 1   Indicateurs clés   2 Répartition de la flotte      3 Flux en direct   4 Médiation
+
+
+
+                            centrale.allotukki.sn
+
+
+                                                             4
+
+
+
+
+43      Présentation des maquettes · Septembre 2026
+      Allo Tukki   03 · Centrale de régulation
+
+
+
+
+ W2      INTERFACE WEB · CENTRALE
+
+
+Dispatch &
+réservations SMS /
+vocales
+Les réservations par téléphone et par SMS sont
+traitées ici, pour que les voyageurs sans
+smartphone ne soient pas laissés de côté.
+
+
+
+ 1     Réservation par téléphone
+       Saisie assistée en wolof ou en français.
+
+ 2     File d'attente SMS
+       Les demandes arrivent en direct depuis le 28020.
+
+ 3     Voiture suggérée
+       La voiture au départ la plus proche est proposée
+       automatiquement.
+
+ 4     Standard vocal
+       Ligne 800 00 28 28, assistance en wolof.
+
+
+
+
+44      Présentation des maquettes · Septembre 2026
+      Allo Tukki      03 · Centrale de régulation
+
+ W2      VUE DÉTAILLÉE · PARTIE 1 SUR 3         Dispatch & réservations SMS / vocales
+ 1   Réservation par téléphone         2 File d'attente SMS   3 Voiture suggérée   4 Standard vocal
+
+
+
+
+                   centrale.allotukki.sn
+
+
+
+
+                                                        1                                             2
+
+
+
+
+45      Présentation des maquettes · Septembre 2026
+      Allo Tukki      03 · Centrale de régulation
+
+ W2      VUE DÉTAILLÉE · PARTIE 2 SUR 3         Dispatch & réservations SMS / vocales
+ 1   Réservation par téléphone         2 File d'attente SMS   3 Voiture suggérée   4 Standard vocal
+
+
+
+
+                   centrale.allotukki.sn
+
+
+
+
+                                                    3
+
+
+
+                                                                                                      4
+
+
+
+
+46      Présentation des maquettes · Septembre 2026
+      Allo Tukki      03 · Centrale de régulation
+
+ W2      VUE DÉTAILLÉE · PARTIE 3 SUR 3          Dispatch & réservations SMS / vocales
+ 1   Réservation par téléphone         2 File d'attente SMS   3 Voiture suggérée   4 Standard vocal
+
+
+
+
+                   centrale.allotukki.sn
+
+
+
+
+47      Présentation des maquettes · Septembre 2026
+      Allo Tukki   03 · Centrale de régulation
+
+
+
+
+ W3      INTERFACE WEB · CENTRALE
+
+
+Sécurité, alertes SOS
+& médiation
+La cellule de sécurité : alertes sur les routes, zones
+sensibles, délégués de terrain et contacts
+d'urgence.
+
+
+
+ 1     État global
+       Incidents, ligne SOS et délai de réponse.
+
+ 2     Carte terrain
+       Zones 30 km/h, délégués, points SOS.
+
+ 3     Contacts d'urgence
+       Police, hôpital, pompiers en un clic.
+
+ 4     Historique
+       Traçabilité complète des interventions.
+
+
+
+
+48      Présentation des maquettes · Septembre 2026
+      Allo Tukki   03 · Centrale de régulation
+
+ W3      VUE DÉTAILLÉE · PARTIE 1 SUR 3          Sécurité, alertes SOS & médiation
+ 1   État global   2 Carte terrain           3 Contacts d'urgence   4 Historique
+
+
+
+
+                     centrale.allotukki.sn
+
+
+
+
+                                                           1
+
+
+
+
+                                                       2                             3
+
+
+
+
+49      Présentation des maquettes · Septembre 2026
+      Allo Tukki   03 · Centrale de régulation
+
+ W3      VUE DÉTAILLÉE · PARTIE 2 SUR 3        Sécurité, alertes SOS & médiation
+ 1   État global   2 Carte terrain        3 Contacts d'urgence   4 Historique
+
+
+
+
+                       centrale.allotukki.sn
+
+
+
+
+50      Présentation des maquettes · Septembre 2026
+      Allo Tukki   03 · Centrale de régulation
+
+ W3      VUE DÉTAILLÉE · PARTIE 3 SUR 3         Sécurité, alertes SOS & médiation
+ 1   État global   2 Carte terrain         3 Contacts d'urgence   4 Historique
+
+
+
+
+                       centrale.allotukki.sn
+
+
+
+
+                                                         4
+
+
+
+
+51      Présentation des maquettes · Septembre 2026
+      Allo Tukki   03 · Centrale de régulation
+
+
+
+
+ W4      INTERFACE WEB · CENTRALE
+
+
+Agréments
+chauffeurs
+La commission examine chaque candidature en
+détail avant de délivrer le badge officiel de
+chauffeur interrégional.
+
+
+
+ 1     Statut des dossiers
+       En attente, validés, agréés, rejetés.
+
+ 2     Contrôle d'identité
+       Pièce d'identité et garant vérifiés.
+
+ 3     Contrôle du véhicule
+       Voiture, places et équipements de sécurité.
+
+ 4     Décision
+       Validation et génération du badge QR.
+
+
+
+
+52      Présentation des maquettes · Septembre 2026
+      Allo Tukki    03 · Centrale de régulation
+
+ W4      VUE DÉTAILLÉE · PARTIE 1 SUR 2            Agréments chauffeurs
+ 1   Statut des dossiers     2 Contrôle d'identité     3 Contrôle du véhicule   4 Décision
+
+
+
+                           centrale.allotukki.sn
+
+
+
+
+                                                        1
+
+
+
+
+                                                            2
+
+
+
+
+53      Présentation des maquettes · Septembre 2026
+      Allo Tukki    03 · Centrale de régulation
+
+ W4      VUE DÉTAILLÉE · PARTIE 2 SUR 2            Agréments chauffeurs
+ 1   Statut des dossiers    2 Contrôle d'identité      3 Contrôle du véhicule   4 Décision
+
+
+
+                               centrale.allotukki.sn
+
+                                                              3
+
+
+
+
+                                                         4
+
+
+
+
+54      Présentation des maquettes · Septembre 2026
+      Allo Tukki   03 · Centrale de régulation
+
+
+
+
+ W5      INTERFACE WEB · CENTRALE
+
+
+Finances & caisse
+solidaire
+La transparence financière de la caisse solidaire,
+au service des chauffeurs et de leurs familles.
+
+
+
+ 1     Soldes de la caisse
+       Collecte, santé et entretien des véhicules.
+
+ 2     Collecte quotidienne
+       Évolution des 10 % solidaires.
+
+ 3     Discipline par gare
+       Taux de règlement de chaque gare de départ.
+
+ 4     Fonds d'entraide
+       Prêts d'urgence décaissés via Wave.
+
+
+
+
+55      Présentation des maquettes · Septembre 2026
+      Allo Tukki    03 · Centrale de régulation
+
+ W5      VUE DÉTAILLÉE · PARTIE 1 SUR 3            Finances & caisse solidaire
+ 1   Soldes de la caisse      2 Collecte quotidienne        3 Discipline par gare   4 Fonds d'entraide
+
+
+
+
+                           centrale.allotukki.sn
+
+
+
+
+                                                       1
+
+
+
+
+                                                        2                                                3
+
+
+
+
+56      Présentation des maquettes · Septembre 2026
+      Allo Tukki    03 · Centrale de régulation
+
+ W5      VUE DÉTAILLÉE · PARTIE 2 SUR 3            Finances & caisse solidaire
+ 1   Soldes de la caisse   2 Collecte quotidienne        3 Discipline par gare   4 Fonds d'entraide
+
+
+
+                           centrale.allotukki.sn
+
+
+
+
+                                                           4
+
+
+
+
+57      Présentation des maquettes · Septembre 2026
+      Allo Tukki    03 · Centrale de régulation
+
+ W5      VUE DÉTAILLÉE · PARTIE 3 SUR 3            Finances & caisse solidaire
+ 1   Soldes de la caisse     2 Collecte quotidienne     3 Discipline par gare   4 Fonds d'entraide
+
+
+
+                           centrale.allotukki.sn
+
+
+
+
+58      Présentation des maquettes · Septembre 2026
+                                                                                           Merci.
+                                                                           Nous serions ravis d'avoir vos retours.
+
+
+                                       1                                                          2                                                          3
+
+                                    Vos retours                                                 Ajustements                                                Validation
+                                    Écran par écran, en citant                                  Intégration de vos remarques                               Validation finale des écrans
+                                    simplement son code (ex. C7,                                dans une nouvelle version des                              avant le passage en
+                                    D8, W1).                                                    maquettes.                                                 développement.
+
+
+
+
+ Crédits photos (Wikimedia Commons, licence CC BY-SA 4.0) : Babacar Dioum, CelmaKoumba, Eliotbadou, Boydiop2, hansley thibaud, Lisa Coulaud, Kevya Ronaldo Mpele.
+
+59       Présentation des maquettes · Septembre 2026
+

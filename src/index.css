@@ -1,0 +1,44 @@
+@import 'tailwindcss';
+
+/* Tokens de design Allo Tukki (page 3 des maquettes) */
+@theme {
+  --font-sans: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
+
+  --color-vert-fondation: #005f3f;
+  --color-vert-action: #0d7a53;
+  --color-vert-clair: #e3f1ea;
+  --color-vert-menthe: #9ff5c3;
+  --color-jaune-soleil: #feb726;
+  --color-jaune-pale: #fde6b0;
+  --color-jaune-creme: #fff4dc;
+  --color-brun-ocre: #7a5200;
+  --color-fond-clair: #f1f3ff;
+  --color-fond-carte: #e6e9fb;
+  --color-encre: #141b2b;
+  --color-encre-douce: #2a3142;
+  --color-gris-texte: #5b6272;
+  --color-gris-bord: #e2e5f0;
+  --color-rouge-sos: #c62828;
+  --color-rouge-pale: #fde2e2;
+
+  --radius-carte: 18px;
+  --radius-bouton: 14px;
+
+  --shadow-douce: 0 4px 16px -6px rgb(20 27 43 / 0.12);
+  --shadow-flottante: 0 10px 30px -10px rgb(20 27 43 / 0.25);
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background: var(--color-fond-clair);
+  color: var(--color-encre);
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+}
