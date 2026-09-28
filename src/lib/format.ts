@@ -36,3 +36,9 @@ export function cn(...classes: Array<string | false | null | undefined>): string
 export function uid(prefix = ''): string {
   return prefix + Math.random().toString(36).slice(2, 8).toUpperCase()
 }
+
+/** "774521890" → "77 452 18 90" */
+export function formatSenegalNumber(digits: string): string {
+  const parts = [digits.slice(0, 2), digits.slice(2, 5), digits.slice(5, 7), digits.slice(7, 9)]
+  return parts.filter(Boolean).join(' ')
+}

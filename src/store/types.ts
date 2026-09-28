@@ -36,8 +36,13 @@ export interface Ride {
   fromId: string
   toId: string
   landmarks: string[]
+  /** Précision libre pour le chauffeur (C10) */
+  note: string
   seats: number
   price: number
+  /** Durées simulées (fixées à l'acceptation / au départ, partagées entre onglets) */
+  approachMs?: number
+  tripMs?: number
   /** Fin du compte à rebours côté chauffeur (D8) */
   offerExpiresAt?: number
   driverId?: string
@@ -112,6 +117,7 @@ export interface DemoData {
       fromId: string
       toId: string
       landmarks: string[]
+      note: string
       seats: number
     }
   }

@@ -13,6 +13,11 @@ export const SEAT_PRICE = 700
 export const COMMISSION_RATE = 0.1
 /** Durée du compte à rebours D8, en ms (avant accélération). */
 export const OFFER_DURATION = 15_000
+/** Durées de simulation d'un voyage (avant accélération). */
+export const AUTO_ACCEPT_MS = 4_000
+export const APPROACH_MS = 30_000
+export const BOARDING_MS = 6_000
+export const TRIP_MS = 40_000
 
 const FEED_LIMIT = 40
 
@@ -23,7 +28,13 @@ export function initialData(): DemoData {
       onboarded: false,
       phone: '',
       firstName: '',
-      draft: { fromId: 'marche-central', toId: 'hopital', landmarks: ['Foulard jaune'], seats: 1 },
+      draft: {
+        fromId: 'marche-central',
+        toId: 'hopital',
+        landmarks: ['Foulard jaune'],
+        note: 'Maison bleue derrière la boulangerie du Marché, je porte un foulard jaune',
+        seats: 1,
+      },
     },
     driver: {
       online: false,
@@ -55,6 +66,7 @@ export interface CreateRideInput {
   fromId?: string
   toId?: string
   landmarks?: string[]
+  note?: string
   seats?: number
 }
 
@@ -129,6 +141,7 @@ export const useDemoStore = create<DemoState>()(
           fromId: input.fromId ?? client.draft.fromId,
           toId: input.toId ?? client.draft.toId,
           landmarks: input.landmarks ?? (input.source === 'app' ? client.draft.landmarks : ['Devant boutique']),
+          note: input.note ?? (input.source === 'app' ? client.draft.note : ''),
           seats,
           price: SEAT_PRICE * seats,
           offerExpiresAt: Date.now() + simMs(OFFER_DURATION),
@@ -158,9 +171,9 @@ export const useDemoStore = create<DemoState>()(
         if (!ride) return
         const now = Date.now()
         const stamps: Partial<Ride> = {
-          acceptee: { acceptedAt: now, driverId: ride.driverId ?? MOUSSA.id },
+          acceptee: { acceptedAt: now, driverId: ride.driverId ?? MOUSSA.id, approachMs: simMs(APPROACH_MS) },
           chauffeur_arrive: { driverArrivedAt: now },
-          en_route: { startedAt: now },
+          en_route: { startedAt: now, tripMs: simMs(TRIP_MS) },
           arrivee: { endedAt: now },
           payee: { paidAt: now },
         }[status as string] ?? {}
@@ -278,7 +291,8 @@ export const useDemoStore = create<DemoState>()(
     }),
     {
       name: STORAGE_KEY,
-      version: 1,
+      version: 2,
+      migrate: () => initialData() as unknown as DemoState,
       partialize: (state) => pickData(state),
     },
   ),

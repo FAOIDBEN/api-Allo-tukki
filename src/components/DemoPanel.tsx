@@ -73,7 +73,7 @@ export function DemoPanel() {
         title="Panneau démo (touche D)"
         onClick={() => setOpen((o) => !o)}
         className={cn(
-          'fixed z-[70] flex h-10 w-10 items-center justify-center rounded-full bg-encre/70 text-white shadow-flottante backdrop-blur transition hover:bg-encre',
+          'fixed z-[70] flex h-10 w-10 items-center justify-center rounded-full bg-encre/70 text-white opacity-40 shadow-flottante backdrop-blur transition hover:bg-encre hover:opacity-100 sm:opacity-100',
           app === 'centrale' ? 'bottom-5 left-5 lg:left-[310px]' : 'bottom-24 left-3 sm:bottom-5 sm:left-5',
         )}
       >

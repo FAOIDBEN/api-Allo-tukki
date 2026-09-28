@@ -35,6 +35,8 @@ export function AppHeader({
   back,
   eyebrow,
   eyebrowStyle = 'texte',
+  eyebrowTone = 'ocre',
+  logo = true,
   title,
   subtitle,
   brand,
@@ -44,6 +46,9 @@ export function AppHeader({
   back?: boolean | string
   eyebrow?: string
   eyebrowStyle?: 'texte' | 'badge'
+  /** Couleur du sur-titre : vert (app client) ou ocre (app chauffeur) */
+  eyebrowTone?: 'vert' | 'ocre'
+  logo?: boolean
   title: string
   subtitle?: string
   /** Titre « Allo Tukki » en vert, style marque (C7, C19) */
@@ -63,7 +68,7 @@ export function AppHeader({
           <ArrowLeft size={22} />
         </button>
       )}
-      <LogoTile size={brand ? 34 : 32} />
+      {logo && <LogoTile size={brand ? 34 : 32} />}
       <div className="min-w-0 flex-1">
         {eyebrow &&
           (eyebrowStyle === 'badge' ? (
@@ -71,7 +76,14 @@ export function AppHeader({
               {eyebrow}
             </span>
           ) : (
-            <div className="text-[11px] font-bold uppercase tracking-wide text-brun-ocre">{eyebrow}</div>
+            <div
+              className={cn(
+                'text-[11px] font-bold uppercase tracking-wide',
+                eyebrowTone === 'vert' ? 'text-vert-action' : 'text-brun-ocre',
+              )}
+            >
+              {eyebrow}
+            </div>
           ))}
         <div
           className={cn(

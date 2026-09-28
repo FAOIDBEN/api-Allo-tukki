@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 import L from 'leaflet'
-import { MapContainer, Marker, Polyline, TileLayer, Tooltip, useMap } from 'react-leaflet'
+import { MapContainer, Marker, Polyline, TileLayer, Tooltip, useMap, useMapEvents } from 'react-leaflet'
 import { Crosshair, MapPinOff } from 'lucide-react'
 import { cn } from '../lib/format'
 import type { LatLng } from '../mock/places'
@@ -18,14 +18,11 @@ export interface MapMarker {
 }
 
 /**
- * Tuiles Carto « Voyager » : données OpenStreetMap, sans clé API, rendu proche des maquettes.
- * Variante sombre pour le mode nuit chauffeur.
+ * Tuiles OpenStreetMap standard (sans clé API). Un filtre CSS les adoucit pour
+ * approcher le rendu des maquettes ; le mode nuit les inverse (voir index.css).
  */
-const TILES = {
-  clair: 'https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',
-  sombre: 'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',
-}
-const ATTRIBUTION = '&copy; OpenStreetMap &copy; CARTO'
+const TILE_URL = 'https://tile.openstreetmap.org/{z}/{x}/{y}.png'
+const ATTRIBUTION = '&copy; contributeurs OpenStreetMap'
 
 const SVG = {
   voiture:
@@ -83,6 +80,11 @@ function Recenter({ center, zoom }: { center: LatLng; zoom: number }) {
   return null
 }
 
+function ClickHandler({ onClick }: { onClick: (position: LatLng) => void }) {
+  useMapEvents({ click: (e) => onClick([e.latlng.lat, e.latlng.lng]) })
+  return null
+}
+
 function LocateButton({ center, zoom }: { center: LatLng; zoom: number }) {
   const map = useMap()
   return (
@@ -109,6 +111,7 @@ export function MapView({
   lowData,
   showLocate = true,
   followCenter,
+  onMapClick,
 }: {
   center: LatLng
   zoom?: number
@@ -125,6 +128,7 @@ export function MapView({
   showLocate?: boolean
   /** Recentre la carte quand `center` change */
   followCenter?: boolean
+  onMapClick?: (position: LatLng) => void
 }) {
   if (lowData) {
     return (
@@ -154,7 +158,7 @@ export function MapView({
         touchZoom={interactive}
         className="h-full w-full"
       >
-        <TileLayer url={dark ? TILES.sombre : TILES.clair} attribution={ATTRIBUTION} subdomains="abcd" maxZoom={19} />
+        <TileLayer key={dark ? 'nuit' : 'jour'} url={TILE_URL} attribution={ATTRIBUTION} maxZoom={19} className={dark ? 'at-tiles-nuit' : 'at-tiles'} />
         {routeDone && routeDone.length > 1 && (
           <Polyline positions={routeDone} pathOptions={{ color: '#005F3F', weight: 5, opacity: 0.25 }} />
         )}
@@ -175,6 +179,7 @@ export function MapView({
             )}
           </Marker>
         ))}
+        {onMapClick && <ClickHandler onClick={onMapClick} />}
         {followCenter && <Recenter center={center} zoom={zoom} />}
         {showLocate && interactive && <LocateButton center={center} zoom={zoom} />}
       </MapContainer>

@@ -102,3 +102,8 @@ body {
   color: var(--color-encre);
   background: var(--color-fond-clair);
 }
+
+/* Adoucissement des tuiles OSM (rendu proche des maquettes) */
+.at-tiles { filter: saturate(0.45) brightness(1.06) contrast(0.92); }
+.at-tiles-nuit { filter: invert(1) hue-rotate(180deg) saturate(0.35) brightness(0.85) contrast(0.9); }
+.leaflet-control-attribution { font-size: 9px; }
