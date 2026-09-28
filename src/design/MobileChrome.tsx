@@ -178,7 +178,7 @@ export function StatusBand({
   right?: ReactNode
 }) {
   return (
-    <div className="flex shrink-0 items-center gap-2 bg-encre px-4 py-2 text-[13px] font-semibold text-white">
+    <div className="flex shrink-0 items-center gap-2 bg-sombre px-4 py-2 text-[13px] font-semibold text-white">
       {icon}
       <span className="min-w-0 flex-1 truncate">{children}</span>
       {right}

@@ -11,7 +11,7 @@ const tones: Record<Tone, string> = {
   rouge: 'bg-rouge-pale text-rouge-sos',
   lavande: 'bg-fond-carte text-vert-fondation',
   blanc: 'bg-white text-vert-fondation',
-  sombre: 'bg-encre text-white',
+  sombre: 'bg-sombre text-white',
 }
 
 export function IconTile({

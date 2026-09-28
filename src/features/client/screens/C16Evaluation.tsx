@@ -71,7 +71,7 @@ export function C16Evaluation() {
         <span className="absolute left-0 top-1 h-3.5 w-3.5 rounded-full bg-vert-fondation" />
         <div className="text-[12px] uppercase text-encre-douce">Départ</div>
         <div className="text-[17px] font-medium">{from.name} Tivaouane</div>
-        <span className="absolute left-0 top-[54px] h-3.5 w-3.5 bg-encre" />
+        <span className="absolute left-0 top-[54px] h-3.5 w-3.5 bg-sombre" />
         <div className="mt-1 text-[12px] uppercase text-encre-douce">Arrivée</div>
         <div className="text-[17px] font-medium">{to.name}</div>
       </div>

@@ -22,8 +22,7 @@ export function C15Arrivee() {
   const [given, setGiven] = useState<number>(1000)
 
   useEffect(() => {
-    if (!ride || ['recherche', 'acceptee', 'chauffeur_arrive', 'en_route', 'terminee', 'annulee'].includes(ride.status))
-      ensureDemoRide('arrivee')
+    if (!ride || ['recherche', 'acceptee', 'chauffeur_arrive', 'en_route', 'annulee', 'terminee'].includes(ride.status)) ensureDemoRide('arrivee')
   }, [ride])
 
   if (!ride) return null
@@ -45,7 +44,7 @@ export function C15Arrivee() {
     <Screen
       header={<ClientHeader back={path('C13')} title="Arrivée et paiement" />}
       band={
-        <div className="flex shrink-0 items-center justify-between bg-encre px-4 py-2 text-[13px] font-semibold text-white">
+        <div className="flex shrink-0 items-center justify-between bg-sombre px-4 py-2 text-[13px] font-semibold text-white">
           <span className="flex items-center gap-2">
             <span className="h-2.5 w-2.5 rounded-full bg-vert-action" /> Connexion sécurisée Tivaouane-Net
           </span>

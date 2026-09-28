@@ -12,7 +12,7 @@ const tones: Record<BadgeTone, string> = {
   rougePlein: 'bg-rouge-sos text-white',
   gris: 'bg-gris-bord text-gris-texte',
   lavande: 'bg-fond-carte text-encre-douce',
-  sombre: 'bg-encre text-white',
+  sombre: 'bg-sombre text-white',
 }
 
 export function Badge({

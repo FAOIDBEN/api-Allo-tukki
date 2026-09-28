@@ -60,7 +60,7 @@ export function C10Recap() {
   return (
     <Screen header={<ClientHeader back={path('C8')} title="Confirmer la course" />}>
       <div className="px-4 pb-6">
-        <div className="flex items-center gap-2.5 rounded-b-[16px] bg-encre px-4 py-2.5 text-[14px] font-semibold text-white">
+        <div className="flex items-center gap-2.5 rounded-b-[16px] bg-sombre px-4 py-2.5 text-[14px] font-semibold text-white">
           <Radio size={17} className="text-jaune-soleil" />
           <span className="flex-1">Réseau 3G stable • Tarif garanti verrouillé</span>
           <BadgeCheck size={20} className="text-[#7fd9a8]" />
@@ -99,7 +99,7 @@ export function C10Recap() {
             </Badge>
           </div>
           <div className="relative mt-3 pl-8">
-            <span className="absolute left-[9px] top-3 h-[calc(100%-1.5rem)] w-0.5 bg-encre" />
+            <span className="absolute left-[9px] top-3 h-[calc(100%-1.5rem)] w-0.5 bg-sombre" />
             <span className="absolute left-0 top-1 flex h-5 w-5 items-center justify-center rounded-full bg-vert-fondation">
               <span className="h-2 w-2 rounded-full bg-white" />
             </span>

@@ -111,7 +111,7 @@ export function useAutoDriver(): void {
   const addRideMessage = useDemoStore((s) => s.addRideMessage)
 
   useEffect(() => {
-    if (!ride) return
+    if (!ride || ride.source !== 'app') return
     let delay: number | null = null
     let action: (() => void) | null = null
     // Réservation laissée passer par le vrai chauffeur : un autre chauffeur (fictif) la prend.

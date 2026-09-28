@@ -1,8 +1,10 @@
 import { Outlet } from 'react-router-dom'
 import { MobileAppLayout } from '../../components/MobileAppLayout'
 import { useDemoStore } from '../../store/demoStore'
+import { useDriverRideEvents } from './useDriverRideEvents'
 
 export function DriverLayout() {
+  useDriverRideEvents()
   const nightMode = useDemoStore((s) => s.settings.nightMode)
   const online = useDemoStore((s) => s.driver.online)
   return (

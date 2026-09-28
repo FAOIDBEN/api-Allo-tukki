@@ -16,7 +16,8 @@ export function useClientRideEvents(): void {
   const ride = useDemoStore((s) => s.ride)
   useAutoDriver()
 
-  useOnChange(ride?.status, (status) => {
+  const own = ride?.source === 'app' ? ride : null
+  useOnChange(own?.status, (status) => {
     if (!ride) return
     if (status === 'acceptee') {
       toast(`${MOUSSA.firstName} a accepté votre course !`, 'succes')
@@ -28,7 +29,7 @@ export function useClientRideEvents(): void {
     if (status === 'arrivee' && pathname === path('C13')) navigate(path('C15'))
   })
 
-  const lastMessage = ride?.messages[ride.messages.length - 1]
+  const lastMessage = own?.messages[own.messages.length - 1]
   useOnChange(lastMessage?.id, () => {
     if (lastMessage?.from === 'chauffeur') toast(`${MOUSSA.firstName} : « ${lastMessage.text} »`, 'info', 4500)
   })

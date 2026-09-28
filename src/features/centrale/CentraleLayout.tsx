@@ -129,7 +129,7 @@ export function CentraleLayout() {
         <button
           type="button"
           aria-label="Fermer le menu"
-          className="fixed inset-0 z-30 bg-encre/40 lg:hidden"
+          className="fixed inset-0 z-30 bg-sombre/40 lg:hidden"
           onClick={() => setMenuOpen(false)}
         />
       )}

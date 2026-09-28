@@ -30,7 +30,7 @@ export function C13PriseEnCharge() {
   const now = useNow(400)
 
   useEffect(() => {
-    if (!ride || ride.status === 'recherche' || ride.status === 'terminee' || ride.status === 'annulee') ensureDemoRide('acceptee')
+    if (!ride || ride.status === 'recherche' || ride.status === 'annulee' || ride.status === 'terminee') ensureDemoRide('acceptee')
   }, [ride])
 
   const geo = useMemo(() => (ride ? rideGeometry(ride) : null), [ride])
@@ -86,7 +86,7 @@ export function C13PriseEnCharge() {
     <Screen
       header={<ClientHeader back={path('C7')} title={onTrip ? 'Voyage en cours' : 'Chauffeur en route'} />}
       band={
-        <div className="flex shrink-0 items-center gap-2 bg-encre px-4 py-2 text-[13px] font-semibold text-white">
+        <div className="flex shrink-0 items-center gap-2 bg-sombre px-4 py-2 text-[13px] font-semibold text-white">
           <RadioTower size={16} className="text-[#7fd9a8]" />
           <span className="flex-1 truncate">Réseau stable • Suivi direct Tivaouane</span>
           <span className="rounded-full bg-white/15 px-2.5 py-0.5 text-[12px] text-[#9ff5c3]">2G/3G OK</span>

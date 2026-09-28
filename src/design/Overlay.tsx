@@ -22,7 +22,7 @@ export function Modal({
   if (!open) return null
   return (
     <div
-      className={cn('inset-0 z-50 flex items-center justify-center bg-encre/50 p-5', fixed ? 'fixed' : 'absolute')}
+      className={cn('inset-0 z-50 flex items-center justify-center bg-sombre/50 p-5', fixed ? 'fixed' : 'absolute')}
       onClick={onClose}
     >
       <div
@@ -58,7 +58,7 @@ export function BottomSheet({
 }) {
   if (!open) return null
   return (
-    <div className="absolute inset-0 z-50 flex flex-col justify-end bg-encre/50" onClick={onClose}>
+    <div className="absolute inset-0 z-50 flex flex-col justify-end bg-sombre/50" onClick={onClose}>
       <div
         role="dialog"
         aria-modal="true"

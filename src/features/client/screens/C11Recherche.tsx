@@ -69,7 +69,7 @@ export function C11Recherche() {
         />
       }
       band={
-        <div className="flex shrink-0 items-center gap-2 bg-encre px-4 py-2.5 text-[13px] font-semibold text-white">
+        <div className="flex shrink-0 items-center gap-2 bg-sombre px-4 py-2.5 text-[13px] font-semibold text-white">
           <SignalLow size={16} className="text-jaune-soleil" />
           <span className="min-w-0 flex-1 truncate">Réseau Edge/3G détecté • Synchronisation en direct</span>
           <span className="rounded-full bg-white/15 px-2.5 py-1 text-[11px] leading-tight">Tivaouane Live</span>
@@ -120,7 +120,7 @@ export function C11Recherche() {
               <span className="mt-1 rounded-[5px] bg-white px-1.5 py-px text-[11px] font-semibold">{car.minutes} min</span>
             </div>
           ))}
-          <span className="absolute bottom-3 left-3 flex items-center gap-1.5 rounded-[10px] bg-encre/80 px-3 py-1.5 text-[12px] font-semibold text-white">
+          <span className="absolute bottom-3 left-3 flex items-center gap-1.5 rounded-[10px] bg-sombre/80 px-3 py-1.5 text-[12px] font-semibold text-white">
             <Radar size={15} className="text-jaune-soleil" /> {scanned} conducteur{scanned > 1 ? 's' : ''} actif
             {scanned > 1 ? 's' : ''} scanné{scanned > 1 ? 's' : ''}
           </span>
@@ -136,7 +136,7 @@ export function C11Recherche() {
             </Badge>
           </div>
           <div className="relative mt-3 pl-6">
-            <span className="absolute left-[5px] top-2 h-[calc(100%-1.4rem)] w-0.5 bg-encre" />
+            <span className="absolute left-[5px] top-2 h-[calc(100%-1.4rem)] w-0.5 bg-sombre" />
             <span className="absolute left-0 top-1 h-3 w-3 rounded-full bg-vert-fondation" />
             <div className="text-[13px] font-semibold text-encre-douce">Point de ramassage</div>
             <div className="text-[17px] font-semibold leading-tight">{from.name} Tivaouane</div>

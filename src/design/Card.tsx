@@ -9,7 +9,7 @@ const tones: Record<Tone, string> = {
   vert: 'bg-vert-fondation text-white shadow-douce',
   jaune: 'bg-jaune-pale',
   rouge: 'bg-rouge-pale',
-  sombre: 'bg-encre text-white',
+  sombre: 'bg-sombre text-white',
 }
 
 export interface CardProps extends HTMLAttributes<HTMLDivElement> {

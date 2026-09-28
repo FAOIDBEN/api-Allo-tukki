@@ -61,6 +61,12 @@ export function isRemoteDriverOnline(): boolean {
   return !!p && !!p.online && Date.now() - p.at < PRESENCE_TTL
 }
 
+/** Une app client est-elle ouverte ailleurs (autre onglet / autre téléphone) ? */
+export function isRemoteClientPresent(): boolean {
+  const p = presence.client
+  return !!p && Date.now() - p.at < PRESENCE_TTL
+}
+
 export function isEmbedded(): boolean {
   try {
     return window.self !== window.top

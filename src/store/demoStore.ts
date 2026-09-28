@@ -195,7 +195,8 @@ export const useDemoStore = create<DemoState>()(
           if (status === 'payee' && ride.status !== 'payee') {
             kpis.tripsClosed += 1
             kpis.solidarityFund += Math.round(ride.price * COMMISSION_RATE)
-            driver.earningsToday += Math.round(ride.price * (1 - COMMISSION_RATE))
+            // Gains bruts : la commission de 10 % est affichée « à reverser » (D7, D14)
+            driver.earningsToday += ride.price
             driver.tripsToday += 1
             feed.unshift(
               feedEvent({
@@ -301,4 +302,11 @@ export const useDemoStore = create<DemoState>()(
 /** Applique la vitesse de simulation à une durée (mode « rapide » ≈ ×2,5). */
 export function simMs(ms: number): number {
   return useDemoStore.getState().settings.speed === 'rapide' ? Math.round(ms * 0.4) : ms
+}
+
+/** Réservation active, sinon la dernière archivée : l'autre app a pu l'archiver entre-temps. */
+export function useCurrentOrLastRide() {
+  const ride = useDemoStore((s) => s.ride)
+  const last = useDemoStore((s) => s.rideHistory[0])
+  return ride ?? last ?? null
 }

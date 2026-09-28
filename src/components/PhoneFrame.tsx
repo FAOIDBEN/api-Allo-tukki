@@ -35,7 +35,7 @@ export function PhoneFrame({
         aria-hidden
         className={cn(
           'pointer-events-none absolute bottom-1.5 left-1/2 z-20 h-[5px] w-32 -translate-x-1/2 rounded-full',
-          dark ? 'bg-white/70' : 'bg-encre/80',
+          dark ? 'bg-white/70' : 'bg-sombre/80',
           alwaysFramed ? 'block' : 'hidden sm:block',
         )}
       />

@@ -3,7 +3,7 @@ import { cn } from '../lib/format'
 import { useToastStore, type ToastTone } from '../store/toastStore'
 
 const styles: Record<ToastTone, string> = {
-  info: 'bg-encre text-white',
+  info: 'bg-sombre text-white',
   succes: 'bg-vert-fondation text-white',
   alerte: 'bg-jaune-soleil text-encre',
   danger: 'bg-rouge-sos text-white',

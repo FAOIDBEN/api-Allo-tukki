@@ -16,6 +16,8 @@
   --color-fond-carte: #e6e9fb;
   --color-encre: #141b2b;
   --color-encre-douce: #2a3142;
+  /* Fond des bandeaux sombres : ne change pas en mode nuit */
+  --color-sombre: #141b2b;
   --color-gris-texte: #5b6272;
   --color-gris-bord: #e2e5f0;
   --color-rouge-sos: #c62828;
